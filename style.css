@@ -18,19 +18,23 @@ body {
 h1,h2{
     margin-top:10PX ;
     padding: 40PX 0  0;
+    text-align: center;
 }
 h3 {
     background:#007bff;
     padding: 15px;
     color:azure;
+    text-align: center;
     margin:30px 0 ;
     font-size: 20px;
     border-radius: 0 50px 50px 0;
+    
 }
 .rigth {
     flex: 1;
     padding:30px;
 }
+
 h5{
     color: #000000;
     position:below;
@@ -121,6 +125,7 @@ main {
     height: auto;
     border-radius: 20px;
     transition: relative;
+    text-align: center;
 
 }
 .image-list li img:hover {
