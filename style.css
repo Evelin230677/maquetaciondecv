@@ -5,30 +5,82 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
+    margin: 20px;
     background-color: rgb(234, 237, 255);
 }
 .header{
-    height: 500px;
+    height: 570px;
     margin-bottom:70px;
     color:rgb(255, 255, 255);
     text-align:center; 
     background-color: rgb(6, 52, 103);
     padding:20px
 }
+.center-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
 h1,h2{
     margin-top:10PX ;
     padding: 40PX 0  0;
     text-align: center;
 }
+.button-group {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary, .btn-blue {
+    background-color: #007bff; 
+}
+
+.btn-primary:hover, .btn-blue:hover {
+    background-color: #0056b3; 
+    transition: background-color 0.3s ease;
+    transform: scale(1.05); 
+}
+.btn-secondary, .btn-success {
+    background-color: #003c71;
+    color: rgb(114, 114, 114);
+}
+
+.btn-secondary:hover, .btn-success:hover {
+    background-color: #003c71; /
+}
+
+
 h3 {
     background:#007bff;
     padding: 15px;
     color:azure;
     text-align: center;
-    margin:30px 0 ;
+    margin:25px 0 ;
     font-size: 20px;
     border-radius: 0 50px 50px 0;
     
+}
+h4 {
+    text-align: center; 
+    margin: 20px auto; 
+    line-height: 1.6; 
+    font-size: 1.2rem; 
+    color: #000000; 
 }
 .rigth {
     flex: 1;
@@ -69,9 +121,11 @@ h5{
     border-radius: 50%;
 }
 main {
-    margin:0 auto;
-    height: 230vh;
+    margin:20 auto;
+    min-height: calc(100vh - 60px);
     background-color: rgb(192, 199, 211);
+    padding: 30px;
+    border-radius: 10px;
     color:rgb(0, 0, 0);
 }
 .informacion-personal {
@@ -109,16 +163,31 @@ main {
 #imageContainer {
     display: inline-block;
 }
-
-.image-list li{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.image-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 20px 0; 
 }
-
-.image-list li  {
-    display: inline-block;
-    margin-right: 30px; 
+.link {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin: 20px auto; 
+}
+.link a {
+    font-size: 1.2rem; 
+    color: #63afff;
+    text-decoration: none;
+}
+.image-list li{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 .image-list li img {
     max-width: 250px; 
@@ -138,7 +207,102 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 16px;
+    bottom: 0;
+    font-size:16px;
+    position: fixed; 
     width: 100%;
     margin-top: auto; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.text-center {
+   
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    max-width: 800px;
+    text-align: center; 
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #002f59;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #003c71;
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+main {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    background-color: rgb(192, 199, 211); 
+}
+.text-center {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    max-width: 800px;
+    text-align: center; 
+}
+p {
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+}
